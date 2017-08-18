@@ -10,7 +10,7 @@ source:
   sha256: 1e856ff6c2ec03785b7ac758c2564b1644a5fe02ce00e5653b5a94e71af9532f
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - moto_server = moto.server:main
   script: python setup.py install --single-version-externally-managed --record record.txt
