@@ -27,7 +27,7 @@ requirements:
     - requests >=2.5
     - xmltodict
     - dicttoxml
-    - six>1.9
+    - six >1.9
     - werkzeug
     - pyaml
     - pytz
@@ -45,7 +45,7 @@ requirements:
     - requests >=2.5
     - xmltodict
     - dicttoxml
-    - six>1.9
+    - six >1.9
     - werkzeug
     - pyaml
     - pytz
