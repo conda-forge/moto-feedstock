@@ -20,7 +20,7 @@ requirements:
     - python
     - setuptools
     - jinja2 >=2.8
-    - cryptography>=2.0.0
+    - cryptography >=2.0.0
     - boto >=2.36.0
     - boto3 >=1.2.1
     - cookies
@@ -38,7 +38,7 @@ requirements:
   run:
     - python
     - jinja2 >=2.8
-    - cryptography>=2.0.0
+    - cryptography >=2.0.0
     - boto >=2.36.0
     - boto3 >=1.2.1
     - cookies
