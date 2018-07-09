@@ -10,13 +10,15 @@ source:
   sha256: 2ef96f0dd4e37adbc75dfd9158a6aa4bedce5aea9a6bbd9d3d9536e208b362d1
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   entry_points:
     - moto_server = moto.server:main
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - jinja2 >=2.8
