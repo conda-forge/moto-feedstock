@@ -14,14 +14,16 @@ Summary: A library that allows your python tests to easily mock out the boto lib
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/moto-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/moto-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/moto-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/moto-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/moto-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/moto-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/moto-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/moto-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/moto-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/moto-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/moto-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/moto-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/moto/badges/version.svg)](https://anaconda.org/conda-forge/moto)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/moto/badges/downloads.svg)](https://anaconda.org/conda-forge/moto)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-moto-green.svg)](https://anaconda.org/conda-forge/moto) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/moto.svg)](https://anaconda.org/conda-forge/moto) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/moto.svg)](https://anaconda.org/conda-forge/moto) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/moto.svg)](https://anaconda.org/conda-forge/moto) |
 
 Installing moto
 ===============
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
