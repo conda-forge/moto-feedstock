@@ -50,6 +50,7 @@ requirements:
     - python-dateutil
     - mock
     - flask
+    - responses >=0.9.0
 
 test:
   imports:
@@ -70,3 +71,4 @@ about:
 extra:
   recipe-maintainers:
     - johanneskoester
+    - mariusvniekerk
