@@ -11,14 +11,15 @@ source:
 
 build:
   number: 0
+  noarch: python
   entry_points:
     - moto_server = moto.server:main
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - jinja2 >=2.8
     - boto >=2.36.0
     - botocore <1.11
