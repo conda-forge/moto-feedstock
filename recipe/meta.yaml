@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.3.4" %}
 
 package:
   name: moto
@@ -7,38 +7,25 @@ package:
 source:
   fn: moto-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-  sha256: 2ef96f0dd4e37adbc75dfd9158a6aa4bedce5aea9a6bbd9d3d9536e208b362d1
+  sha256: 7c86d1c3bd6362954afaded735354c11afd22037eb6736152f057a1bff0c8868
 
 build:
   number: 0
+  noarch: python
   entry_points:
     - moto_server = moto.server:main
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-    - jinja2 >=2.8
-    - boto >=2.36.0
-    - boto3 >=1.2.1
-    - cookies
-    - requests >=2.0
-    - xmltodict
-    - dicttoxml
-    - six
-    - werkzeug
-    - pyaml
-    - pytz
-    - python-dateutil
-    - mock
-    - flask
-
+    - pip
   run:
     - python
     - jinja2 >=2.8
     - boto >=2.36.0
-    - boto3 >=1.2.1
+    - botocore <1.11
+    - boto3 >=1.2.1,<1.8.0
     - cookies
     - requests >=2.0
     - xmltodict
@@ -50,6 +37,11 @@ requirements:
     - python-dateutil
     - mock
     - flask
+    - responses >=0.9.0
+    - python-jose <3.0.0
+    - aws-xray-sdk <0.96,>=0.93
+    - jsondiff 1.1.1
+    - docker-py
 
 test:
   imports:
@@ -70,3 +62,4 @@ about:
 extra:
   recipe-maintainers:
     - johanneskoester
+    - mariusvniekerk
