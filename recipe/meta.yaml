@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.19" %}
 
 package:
   name: moto
@@ -7,7 +7,7 @@ package:
 source:
   fn: moto-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-  sha256: 2ef96f0dd4e37adbc75dfd9158a6aa4bedce5aea9a6bbd9d3d9536e208b362d1
+  sha256: 3657fa0b44a5a4e41be7613aa648ca5e5b7e79a422d6c2e380272a8923a22fcc
 
 build:
   number: 0
@@ -20,13 +20,14 @@ requirements:
     - python
     - setuptools
     - jinja2 >=2.8
+    - cryptography >=2.0.0
     - boto >=2.36.0
     - boto3 >=1.2.1
     - cookies
-    - requests >=2.0
+    - requests >=2.5
     - xmltodict
     - dicttoxml
-    - six
+    - six >1.9
     - werkzeug
     - pyaml
     - pytz
@@ -37,13 +38,14 @@ requirements:
   run:
     - python
     - jinja2 >=2.8
+    - cryptography >=2.0.0
     - boto >=2.36.0
     - boto3 >=1.2.1
     - cookies
-    - requests >=2.0
+    - requests >=2.5
     - xmltodict
     - dicttoxml
-    - six
+    - six >1.9
     - werkzeug
     - pyaml
     - pytz
