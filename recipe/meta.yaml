@@ -17,25 +17,9 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - pip
-    - jinja2 >=2.8
-    - boto >=2.36.0
-    - botocore <1.11
-    - boto3 >=1.2.1,<1.8.0
-    - cookies
-    - requests >=2.0
-    - xmltodict
-    - dicttoxml
-    - six
-    - werkzeug
-    - pyaml
-    - pytz
-    - python-dateutil
-    - mock
-    - flask
-
   run:
     - python
     - jinja2 >=2.8
