@@ -39,6 +39,7 @@ requirements:
     - flask
     - responses >=0.9.0
     - python-jose <3.0.0
+    - aws-xray-sdk <0.96,>=0.93
     - docker-py
 
 test:
