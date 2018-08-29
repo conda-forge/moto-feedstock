@@ -14,9 +14,8 @@ Summary: A library that allows your python tests to easily mock out the boto lib
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/moto-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/moto-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/moto-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/moto-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/moto-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/moto-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/moto-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/moto-feedstock)
 
 Current release info
 ====================
