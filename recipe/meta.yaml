@@ -42,6 +42,7 @@ requirements:
     - aws-xray-sdk <0.96,>=0.93
     - jsondiff 1.1.1
     - docker-py
+    - backports.tempfile
 
 test:
   imports:
