@@ -10,7 +10,7 @@ source:
   sha256: 9cb02134148fbe3ed81f11d6ab9bd71bbd6bc2db7e59a45de77fb1d0fedb744e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - moto_server = moto.server:main
@@ -43,11 +43,65 @@ requirements:
     - idna >=2.5,<2.9
     - cfn-lint
     - flask
+    # this is an undeclared dependency!
+    - backports.tempfile
 
 test:
   imports:
     - moto
-
+    - moto.acm
+    - moto.apigateway
+    - moto.autoscaling
+    - moto.awslambda
+    - moto.batch
+    - moto.cloudformation
+    - moto.cloudwatch
+    - moto.cognitoidentity
+    - moto.cognitoidp
+    - moto.config
+    - moto.core
+    - moto.datapipeline
+    - moto.dynamodb
+    - moto.dynamodb2
+    - moto.dynamodbstreams
+    - moto.ec2
+    - moto.ec2.responses
+    - moto.ecr
+    - moto.ecs
+    - moto.elb
+    - moto.elbv2
+    - moto.emr
+    - moto.events
+    - moto.glacier
+    - moto.glue
+    - moto.iam
+    - moto.instance_metadata
+    - moto.iot
+    - moto.iotdata
+    - moto.kinesis
+    - moto.kms
+    - moto.logs
+    - moto.opsworks
+    - moto.organizations
+    - moto.packages
+    - moto.packages.httpretty
+    - moto.polly
+    - moto.rds
+    - moto.rds2
+    - moto.redshift
+    - moto.resourcegroupstaggingapi
+    - moto.route53
+    - moto.s3
+    - moto.s3bucket_path
+    - moto.secretsmanager
+    - moto.ses
+    - moto.sns
+    - moto.sqs
+    - moto.ssm
+    - moto.sts
+    - moto.swf
+    - moto.swf.models
+    - moto.xray
   commands:
     - moto_server --help
 
