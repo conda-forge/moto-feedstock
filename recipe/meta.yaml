@@ -10,7 +10,7 @@ source:
   sha256: dde8a4a0eb32f0e4b7d1c839b5ddfe2e5ba3625f417903c97b2d181f25ca2dc2
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - moto_server = moto.server:main
@@ -24,8 +24,8 @@ requirements:
     - python
     - jinja2 >=2.10.1
     - boto >=2.36.0
-    - boto3 >=1.9.86
     # we need to bound this since 198 changed some of the api
+    - boto3 >=1.9.86,<=1.9.197
     - botocore >=1.12.86,<=1.12.197
     - cryptography >=2.3.0
     - requests >=2.5
