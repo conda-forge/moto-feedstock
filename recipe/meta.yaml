@@ -1,4 +1,4 @@
-{% set version = "1.3.12" %}
+{% set version = "1.3.13" %}
 
 package:
   name: moto
@@ -7,10 +7,10 @@ package:
 source:
   fn: moto-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-  sha256: dde8a4a0eb32f0e4b7d1c839b5ddfe2e5ba3625f417903c97b2d181f25ca2dc2
+  sha256: 95d48d8ebaad47fb5bb4233854cf1cf8523ec5307d50eb1e4017ce10f1960b66
 
 build:
-  number: 2
+  number: 0
   noarch: python
   entry_points:
     - moto_server = moto.server:main
