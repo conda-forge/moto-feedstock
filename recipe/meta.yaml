@@ -108,12 +108,13 @@ test:
     - moto.xray
   requires:
     - pytest
-    - sure
+    - pip
     - freezegun
   source_files:
     - github/tests
   commands:
     - moto_server --help
+    - pip install sure
     - python -m py.test github/tests
 
 about:
