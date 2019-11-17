@@ -5,9 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  fn: moto-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-  sha256: 79aeaeed1592a24d3c488840065a3fcb3f4fa7ba40259e112482454c0e48a03a
+  - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
+    sha256: 79aeaeed1592a24d3c488840065a3fcb3f4fa7ba40259e112482454c0e48a03a
+  - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
+    sha256: 79aeaeed1592a24d3c488840065a3fcb3f4fa7ba40259e112482454c0e48a03a
+    folder: github
 
 build:
   number: 0
@@ -49,6 +51,8 @@ requirements:
     - backports.tempfile
 
 test:
+  requires:
+    - pytest
   imports:
     - moto
     - moto.acm
@@ -106,6 +110,7 @@ test:
     - moto.xray
   commands:
     - moto_server --help
+    - python -m py.test github/tests
 
 about:
   home: http://getmoto.org
