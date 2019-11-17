@@ -116,7 +116,8 @@ test:
   commands:
     - moto_server --help
     - pip install sure
-    - python -m py.test github/tests
+    - cd github
+    - nosetests tests
 
 about:
   home: http://getmoto.org
