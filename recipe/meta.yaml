@@ -111,6 +111,7 @@ test:
     - pytest
     - pip
     - freezegun
+    - parameterized
   source_files:
     - github/tests
   commands:
