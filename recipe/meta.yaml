@@ -107,6 +107,7 @@ test:
     - moto.swf.models
     - moto.xray
   requires:
+    - nose
     - pytest
     - pip
     - freezegun
