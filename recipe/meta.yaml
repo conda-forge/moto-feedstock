@@ -8,7 +8,7 @@ source:
   - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
     sha256: 79aeaeed1592a24d3c488840065a3fcb3f4fa7ba40259e112482454c0e48a03a
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: 79aeaeed1592a24d3c488840065a3fcb3f4fa7ba40259e112482454c0e48a03a
+    sha256: e10412aa495af0f254d3944fd369e75a7c1bcc2f6940a7ea0a0cea34b2f8bf27
     folder: github
 
 build:
