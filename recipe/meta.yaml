@@ -110,7 +110,7 @@ test:
     - moto.xray
   commands:
     - moto_server --help
-    - python -m py.test github/tests
+    - python -m py.test $SRC_DIR/github/tests
 
 about:
   home: http://getmoto.org
