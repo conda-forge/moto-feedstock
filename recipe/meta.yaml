@@ -51,8 +51,6 @@ requirements:
     - backports.tempfile
 
 test:
-  requires:
-    - pytest
   imports:
     - moto
     - moto.acm
@@ -108,9 +106,13 @@ test:
     - moto.swf
     - moto.swf.models
     - moto.xray
+  requires:
+    - pytest
+  source_files:
+    - github/tests
   commands:
     - moto_server --help
-    - python -m py.test $SRC_DIR/github/tests
+    - python -m py.test github/tests
 
 about:
   home: http://getmoto.org
