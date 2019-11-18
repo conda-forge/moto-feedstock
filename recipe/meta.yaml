@@ -120,7 +120,7 @@ test:
     - pip install sure
     - cd github
     - >
-      nosetests tests 
+        nosetests tests 
         --exclude-test=test_lambda.test_invoke_requestresponse_function
         --exclude-test=test_cognitoidp.test_token_legitimacy
         --exclude-test=test_lambda.test_invoke_function_from_dynamodb
