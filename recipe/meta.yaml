@@ -108,6 +108,7 @@ test:
     - moto.xray
   requires:
     - nose
+    - nose-exclude
     - pytest
     - pip
     - freezegun
@@ -118,7 +119,14 @@ test:
     - moto_server --help
     - pip install sure
     - cd github
-    - nosetests tests
+    - >
+      nosetests tests 
+        --exclude-test=test_lambda.test_invoke_requestresponse_function
+        --exclude-test=test_cognitoidp.test_token_legitimacy
+        --exclude-test=test_lambda.test_invoke_function_from_dynamodb
+        --exclude-test=test_lambda.test_invoke_function_from_sns
+        --exclude-test=test_lambda.test_invoke_function_from_sqs
+        --exclude-test=test_lambda.test_invoke_function_from_sqs_exception
 
 about:
   home: http://getmoto.org
