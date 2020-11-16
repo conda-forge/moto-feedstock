@@ -122,13 +122,14 @@ test:
     - pip install sure
     - cd github
     - >
-      nosetests tests --verbose
-        --exclude-test=test_lambda.test_invoke_requestresponse_function
-        --exclude-test=test_cognitoidp.test_token_legitimacy
-        --exclude-test=test_lambda.test_invoke_function_from_dynamodb
-        --exclude-test=test_lambda.test_invoke_function_from_sns
-        --exclude-test=test_lambda.test_invoke_function_from_sqs
-        --exclude-test=test_lambda.test_invoke_function_from_sqs_exception
+      pytest tests --verbose
+        -k "not test_lambda"
+        -k "not test_batch"
+        -k "not test_lambda_cloudformation"
+        -k "not test_cognitoidp.test_token_legitimacy"
+        -k "not test_create_stack_lambda_and_dynamodb"
+        -k "not tests.test_cloudformation.test_validate"
+        -k "not test_cloudformation_stack_integration.test_lambda_function"
 
 about:
   home: http://getmoto.org
