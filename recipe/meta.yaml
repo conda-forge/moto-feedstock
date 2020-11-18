@@ -1,4 +1,4 @@
-{% set version = "1.3.14" %}
+{% set version = "1.3.16" %}
 
 package:
   name: moto
@@ -6,9 +6,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-    sha256: 79aeaeed1592a24d3c488840065a3fcb3f4fa7ba40259e112482454c0e48a03a
+    sha256: 6c686b1f117563391957ce47c2106bc3868783d59d0e004d2446dce875bec07f
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: e10412aa495af0f254d3944fd369e75a7c1bcc2f6940a7ea0a0cea34b2f8bf27
+    sha256: dce8754644f06d64721957715252d05c31ab5664c45039ff264138f7c95949be
     folder: github
 
 build:
@@ -20,10 +20,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - jinja2 >=2.10.1
     - boto >=2.36.0
     # we need to bound this since 198 changed some of the api
@@ -39,6 +39,7 @@ requirements:
     - python-dateutil >=2.1,<3.0.0
     - python-jose <4.0.0
     - mock
+    - more-itertools
     - docker-py >=2.5.1
     - jsondiff 1.1.2
     - aws-xray-sdk !=0.96,>=0.93
@@ -47,6 +48,7 @@ requirements:
     - cfn-lint >=0.4.0
     - sshpubkeys >=3.1.0,<4.0
     - flask
+    - zipp
     # this is an undeclared dependency!
     - backports.tempfile
 
@@ -119,14 +121,15 @@ test:
     - moto_server --help
     - pip install sure
     - cd github
-    - >
-        nosetests tests 
-        --exclude-test=test_lambda.test_invoke_requestresponse_function
-        --exclude-test=test_cognitoidp.test_token_legitimacy
-        --exclude-test=test_lambda.test_invoke_function_from_dynamodb
-        --exclude-test=test_lambda.test_invoke_function_from_sns
-        --exclude-test=test_lambda.test_invoke_function_from_sqs
-        --exclude-test=test_lambda.test_invoke_function_from_sqs_exception
+#     - >
+#       pytest tests --verbose
+#         -k "not test_lambda"
+#         -k "not test_batch"
+#         -k "not test_lambda_cloudformation"
+#         -k "not test_cognitoidp.test_token_legitimacy"
+#         -k "not test_create_stack_lambda_and_dynamodb"
+#         -k "not tests.test_cloudformation.test_validate"
+#         -k "not test_cloudformation_stack_integration.test_lambda_function"
 
 about:
   home: http://getmoto.org
