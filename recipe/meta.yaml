@@ -20,12 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.3
     - pip
   run:
-    - python >=3
+    - python >=3.3
     - jinja2 >=2.10.1
-    - boto >=2.36.0
     # we need to bound this since 198 changed some of the api
     - boto3 >=1.9.201
     - botocore >=1.12.201
@@ -38,20 +37,20 @@ requirements:
     - pytz
     - python-dateutil >=2.1,<3.0.0
     - python-jose <4.0.0
-    # https://github.com/spulec/moto/issues/3535
-    - mock <=4.0.2
-    - more-itertools
+    - mock
     - docker-py >=2.5.1
     - jsondiff 1.1.2
     - aws-xray-sdk !=0.96,>=0.93
     - responses >=0.9.0
-    - idna >=2.5,<2.9
     - cfn-lint >=0.4.0
     - sshpubkeys >=3.1.0,<4.0
     - flask
-    - zipp
-    # this is an undeclared dependency!
-    - backports.tempfile
+    - beautifulsoup4
+    - lxml
+    - flask_cors
+    - inflection
+    - prompt_toolkit
+    - click
 
 test:
   imports:
