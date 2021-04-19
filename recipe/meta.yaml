@@ -118,6 +118,7 @@ test:
   source_files:
     - github/tests
   commands:
+    - pip check
     - moto_server --help
     - pip install sure
     - cd github
@@ -126,7 +127,7 @@ test:
 #         -k "not test_lambda"
 #         -k "not test_batch"
 #         -k "not test_lambda_cloudformation"
-#         -k "not test_cognitoidp.test_token_legitimacy"
+#         -k "not test_cognitoidp.test_token_legitimacy"e
 #         -k "not test_create_stack_lambda_and_dynamodb"
 #         -k "not tests.test_cloudformation.test_validate"
 #         -k "not test_cloudformation_stack_integration.test_lambda_function"
