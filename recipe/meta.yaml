@@ -115,6 +115,9 @@ test:
     - pip
     - freezegun
     - parameterized
+    # needed for passing pip check
+    - rsa
+    - pyasn1
   source_files:
     - github/tests
   commands:
