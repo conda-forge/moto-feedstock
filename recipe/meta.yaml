@@ -118,6 +118,7 @@ test:
     # needed for passing pip check
     - rsa
     - pyasn1
+    - ecdsa <0.15
   source_files:
     - github/tests
   commands:
