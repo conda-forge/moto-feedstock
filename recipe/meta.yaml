@@ -12,7 +12,7 @@ source:
     folder: github
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - moto_server = moto.server:main
