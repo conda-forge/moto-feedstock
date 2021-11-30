@@ -104,8 +104,6 @@ test:
     - moto.xray
   requires:
     - pip
-    # just for pip check (not actually used) https://github.com/spulec/moto/issues/4573
-    - more-itertools
   commands:
     - pip check
     - moto_server --help
