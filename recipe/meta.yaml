@@ -81,7 +81,7 @@ test:
     - moto.dynamodbstreams
     - moto.ec2
     - moto.ec2.responses
-    - moto.ec2.ec2instanceconnect
+    - moto.ec2instanceconnect
     - moto.ecr
     - moto.ecs
     - moto.efs
