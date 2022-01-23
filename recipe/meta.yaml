@@ -43,64 +43,111 @@ requirements:
     - flask_cors
     - jsondiff >=1.1.2
     - aws-xray-sdk !=0.96,>=0.93
-    - sshpubkeys >=3.1.0,<4.0
+    - sshpubkeys >=3.1.0
     - idna >=2.5,<4
+    - graphql-core
+    - setuptools
+    - importlib_metadata
 
 test:
   imports:
     - moto
     - moto.acm
     - moto.apigateway
+    - moto.applicationautoscaling
+    - moto.appsync
+    - moto.athena
     - moto.autoscaling
     - moto.awslambda
     - moto.batch
+    - moto.budgets
     - moto.cloudformation
+    - moto.cloudfront
     - moto.cloudwatch
+    - moto.codecommit
+    - moto.codepipeline
     - moto.cognitoidentity
     - moto.cognitoidp
     - moto.config
     - moto.core
     - moto.datapipeline
+    - moto.datasync
+    - moto.dax
+    - moto.dms
+    - moto.dms
+    - moto.ds
     - moto.dynamodb
     - moto.dynamodb2
     - moto.dynamodbstreams
     - moto.ec2
     - moto.ec2.responses
+    - moto.ec2.ec2instanceconnect
     - moto.ecr
     - moto.ecs
+    - moto.efs
+    - moto.eks
+    - moto.elasticache
+    - moto.elasticbeanstalk
+    - moto.elastictranscoder
     - moto.elb
     - moto.elbv2
     - moto.emr
+    - moto.emrcontainers
+    - moto.es
     - moto.events
+    - moto.firehose
+    - moto.forecast
     - moto.glacier
     - moto.glue
+    - moto.guardduty
     - moto.iam
     - moto.instance_metadata
     - moto.iot
     - moto.iotdata
     - moto.kinesis
+    - moto.kinesisvideo
+    - moto.kinesisvideoarchivedmedia
     - moto.kms
     - moto.logs
+    - moto.managedblockchain
+    - moto.mediaconnect
+    - moto.medialive
+    - moto.mediapackage
+    - moto.mediastore
+    - moto.mediastoredata
     - moto.opsworks
     - moto.organizations
     - moto.packages
-    - moto.packages.httpretty
     - moto.polly
+    - moto.ram
     - moto.rds
     - moto.rds2
     - moto.redshift
+    - moto.resourcegroups
     - moto.resourcegroupstaggingapi
     - moto.route53
+    - moto.route53resolver
     - moto.s3
     - moto.s3bucket_path
+    - moto.s3control
+    - moto.sagemaker
+    - moto.sdb
     - moto.secretsmanager
     - moto.ses
     - moto.sns
     - moto.sqs
     - moto.ssm
+    - moto.ssoadmin
+    - moto.stepfunctions
     - moto.sts
+    - moto.support
     - moto.swf
     - moto.swf.models
+    - moto.templates
+    - moto.timestreamwrite
+    - moto.transcribe
+    - moto.utilities
+    - moto.wafv2
     - moto.xray
   requires:
     - pip
