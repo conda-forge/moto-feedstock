@@ -19,7 +19,7 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3997&branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/moto-feedstock?branchName=master">
       </a>
     </td>
@@ -121,6 +121,7 @@ Feedstock Maintainers
 =====================
 
 * [@hajapy](https://github.com/hajapy/)
+* [@jan-janssen](https://github.com/jan-janssen/)
 * [@johanneskoester](https://github.com/johanneskoester/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 
