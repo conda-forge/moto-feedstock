@@ -143,7 +143,6 @@ test:
     - moto.support
     - moto.swf
     - moto.swf.models
-    - moto.templates
     - moto.timestreamwrite
     - moto.transcribe
     - moto.utilities
