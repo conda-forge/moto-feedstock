@@ -1,4 +1,4 @@
-{% set version = "3.0.6" %}
+{% set version = "3.0.7" %}
 
 package:
   name: moto
@@ -6,9 +6,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-    sha256: 53ab3b6647382f61ad5aef8351ccba3712fa9595b7826883e4a38a4ac5c9b5a7
+    sha256: 43a0c89eee6518ffaf77142b5ed3e0c1522f97a22368af2c90af5a8914dcdce9
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: 97b40e362568e743cfd8e94825b9b8b3690ce1e8004323003067b0727ed60409
+    sha256: f865b6b3398594a0c05295226a2b897d5e70e86e19fc9f0ebaf3df3241f4f1c5
     folder: github
 
 build:
