@@ -77,7 +77,6 @@ test:
     - moto.dms
     - moto.ds
     - moto.dynamodb
-    - moto.dynamodb2
     - moto.dynamodbstreams
     - moto.ec2
     - moto.ec2.responses
