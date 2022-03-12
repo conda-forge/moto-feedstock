@@ -1,4 +1,4 @@
-{% set version = "3.0.7" %}
+{% set version = "3.1.0" %}
 
 package:
   name: moto
@@ -6,9 +6,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-    sha256: 43a0c89eee6518ffaf77142b5ed3e0c1522f97a22368af2c90af5a8914dcdce9
+    sha256: c4327b34228cc3d446e8e5434af5f997ab4c5f85cdf93a201833dca1ca0c0717
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: f865b6b3398594a0c05295226a2b897d5e70e86e19fc9f0ebaf3df3241f4f1c5
+    sha256: eaafd26976b7a90a9609d6cdac10b1dc8d6a6f17a35108c7b670e87a9f3c698b
     folder: github
 
 build:
@@ -77,7 +77,6 @@ test:
     - moto.dms
     - moto.ds
     - moto.dynamodb
-    - moto.dynamodb2
     - moto.dynamodbstreams
     - moto.ec2
     - moto.ec2.responses
@@ -121,7 +120,6 @@ test:
     - moto.polly
     - moto.ram
     - moto.rds
-    - moto.rds2
     - moto.redshift
     - moto.resourcegroups
     - moto.resourcegroupstaggingapi
