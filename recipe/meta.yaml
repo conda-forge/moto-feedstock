@@ -120,7 +120,6 @@ test:
     - moto.polly
     - moto.ram
     - moto.rds
-    - moto.rds2
     - moto.redshift
     - moto.resourcegroups
     - moto.resourcegroupstaggingapi
