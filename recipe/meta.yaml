@@ -48,6 +48,7 @@ requirements:
     - graphql-core
     - setuptools
     - importlib_metadata
+    - openapi-spec-validator
 
 test:
   imports:
