@@ -1,4 +1,4 @@
-{% set version = "3.1.9" %}
+{% set version = "3.1.10" %}
 
 package:
   name: moto
@@ -6,9 +6,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
-    sha256: ba683e70950b6579189bc12d74c1477aa036c090c6ad8b151a22f5896c005113
+    sha256: f3b5f77780ed7a852670b4079931d8cd397983f631de7f9b09b81747a4bd56cd
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: 8b4c62b6a9dbf7039138b848cee9c2a748a6069cd1d35afc1d1b82649e355072
+    sha256: e4e1010b555c436f31470d5cce9afe3d0dcb6b66ddf1e11c67ca56f4cf37a476
     folder: github
 
 build:
@@ -48,6 +48,7 @@ requirements:
     - graphql-core
     - setuptools
     - importlib_metadata
+    - openapi-spec-validator
 
 test:
   imports:
