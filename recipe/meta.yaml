@@ -49,6 +49,7 @@ requirements:
     - setuptools
     - importlib_metadata
     - openapi-spec-validator
+    - pyparsing
 
 test:
   imports:
