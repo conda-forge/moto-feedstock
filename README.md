@@ -1,11 +1,11 @@
-About moto
-==========
+About moto-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moto-feedstock/blob/main/LICENSE.txt)
 
 Home: http://getmoto.org
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moto-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library that allows your python tests to easily mock out the boto library.
 
