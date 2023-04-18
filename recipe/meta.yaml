@@ -12,7 +12,7 @@ source:
     folder: github
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - moto_server = moto.server:main
@@ -38,8 +38,8 @@ requirements:
     - python-jose >=3.1.0,<4.0.0
     - docker-py >=2.5.1
     - responses >=0.9.0
-    - cfn-lint >=0.4.0
-    - flask
+    - cfn-lint >=0.40.0
+    - flask !=2.2.0,!=2.2.1
     - flask_cors
     - jsondiff >=1.1.2
     - aws-xray-sdk !=0.96,>=0.93
@@ -48,8 +48,8 @@ requirements:
     - graphql-core
     - setuptools
     - importlib_metadata
-    - openapi-spec-validator
-    - pyparsing
+    - openapi-spec-validator >=0.2.8
+    - pyparsing >=3.0.7
 
 test:
   imports:
