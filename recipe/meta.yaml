@@ -36,8 +36,9 @@ requirements:
     - jinja2 >=2.10.1
     # dependencies for test imports
     - openapi-spec-validator >=0.2.8
-    - pyparsing >=3.0.7
     - joserfc
+    - pyparsing >=3.0.7
+    - jsondiff >=1.1.2
 
 test:
   imports:
