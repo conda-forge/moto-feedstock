@@ -39,6 +39,7 @@ requirements:
     - joserfc
     - pyparsing >=3.0.7
     - jsondiff >=1.1.2
+    - aws-xray-sdk !=0.96,>=0.93
 
 test:
   imports:
