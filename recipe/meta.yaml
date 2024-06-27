@@ -33,6 +33,8 @@ requirements:
     - python-dateutil <3.0.0,>=2.1
     - responses >=0.15.0
     - jinja2 >=2.10.1
+    # dependencies for test imports
+    - openapi-spec-validator >=0.2.8
 
 test:
   imports:
