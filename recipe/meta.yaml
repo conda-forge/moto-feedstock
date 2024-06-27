@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - pip
   run:
+    # dependencies from grayskull
     - python >=3.8
     - boto3 >=1.9.201
     - botocore >=1.14.0
@@ -35,6 +36,7 @@ requirements:
     - jinja2 >=2.10.1
     # dependencies for test imports
     - openapi-spec-validator >=0.2.8
+    - joserfc
 
 test:
   imports:
