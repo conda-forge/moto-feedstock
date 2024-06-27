@@ -41,6 +41,7 @@ requirements:
     - jsondiff >=1.1.2
     - aws-xray-sdk !=0.96,>=0.93
     - flask !=2.2.0,!=2.2.1
+    - flask-cors
 
 test:
   imports:
