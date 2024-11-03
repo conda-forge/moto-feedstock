@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/m/moto/moto-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/m/moto/moto-{{ version }}.tar.gz
     sha256: e6c6e1558f65c01fe1b3b5cc7ee35b474167fe3600326990f54601d75a7ea639
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
     sha256: 0af55a8aa6a6d4548be2128292c4f3ee1e9dd89b7632eb337513cd7b9fd71953
@@ -22,6 +22,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     # dependencies from grayskull
     - python >=3.8
