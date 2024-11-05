@@ -1,4 +1,4 @@
-{% set version = "5.0.19" %}
+{% set version = "5.0.20" %}
 
 package:
   name: moto
@@ -6,9 +6,9 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/m/moto/moto-{{ version }}.tar.gz
-    sha256: e6c6e1558f65c01fe1b3b5cc7ee35b474167fe3600326990f54601d75a7ea639
+    sha256: 24b1319cc66f81f40817a57ac80602a5f1862669bdd621f0d96ab989a6578255
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: 0af55a8aa6a6d4548be2128292c4f3ee1e9dd89b7632eb337513cd7b9fd71953
+    sha256: 651f82db20164c3c6a51b482d0ec7b2f5d070f097252ac3a761b5112d6b11593
     folder: github
 
 build:
@@ -28,11 +28,11 @@ requirements:
     # dependencies from grayskull
     - python >=3.8
     - boto3 >=1.9.201
-    - botocore >=1.14.0
+    - botocore >=1.14.0,!=1.35.45,!=1.35.46
     - cryptography >=3.3.1
     - requests >=2.5
     - xmltodict
-    - werkzeug !=2.2.0,!=2.2.1,>=0.5
+    - werkzeug >=0.5,!=2.2.0,!=2.2.1
     - python-dateutil <3.0.0,>=2.1
     - responses >=0.15.0
     - jinja2 >=2.10.1
