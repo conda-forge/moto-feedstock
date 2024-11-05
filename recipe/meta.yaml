@@ -1,4 +1,4 @@
-{% set version = "5.0.18" %}
+{% set version = "5.0.19" %}
 
 package:
   name: moto
@@ -6,9 +6,9 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/m/moto/moto-{{ version }}.tar.gz
-    sha256: 8a7ad2f53a2e6cc9db2ff65c0e0d4b5d7e78bc00b825c9e1ff6cc394371e76e9
+    sha256: e6c6e1558f65c01fe1b3b5cc7ee35b474167fe3600326990f54601d75a7ea639
   - url: https://github.com/spulec/moto/archive/{{ version }}.tar.gz
-    sha256: dc5eaf711b4a8b7c994af68b8cf1e999dfdf946a724b15fa016fbe30f1faef0f
+    sha256: 0af55a8aa6a6d4548be2128292c4f3ee1e9dd89b7632eb337513cd7b9fd71953
     folder: github
 
 build:
@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - setuptools
     - pip
+    - setuptools
   run:
     # dependencies from grayskull
     - python >=3.8
