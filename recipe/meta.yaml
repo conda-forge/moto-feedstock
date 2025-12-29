@@ -83,7 +83,6 @@ test:
     - moto.eks
     - moto.elasticache
     - moto.elasticbeanstalk
-    - moto.elastictranscoder
     - moto.elb
     - moto.elbv2
     - moto.emr
