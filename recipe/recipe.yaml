@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "5.2.2"
+  version: "5.2.3"
 
 package:
   name: moto
@@ -9,9 +9,9 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/m/moto/moto-${{ version }}.tar.gz
-    sha256: aac8023a429e125e91c91f8f4730a67b54f518cda587352f7e67252fe3168f75
+    sha256: a9e95c3218b6eda18e74571f1ced11cb1bc3151467d562c1da6037b9d19832cb
   - url: https://github.com/spulec/moto/archive/${{ version }}.tar.gz
-    sha256: f86f7c8b24194f7ec0c29d73db6331b9e77f33a3b7803fdd1a41c3e5ff801b5d
+    sha256: 863b454b4512d8a5a3371ae2b0001db54709d7466dcdb5cafd1eea37baf5902a
     target_directory: github
 
 build:
