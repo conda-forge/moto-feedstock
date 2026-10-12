@@ -115,7 +115,6 @@ tests:
         - moto.mediastore
         - moto.mediastoredata
         - moto.organizations
-        - moto.packages
         - moto.polly
         - moto.ram
         - moto.rds
@@ -146,7 +145,9 @@ tests:
         - moto.wafv2
         - moto.xray
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
   - requirements:
       run:
         - pip
